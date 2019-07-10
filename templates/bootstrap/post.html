@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class = 'container'>
+
+        <div class = 'row'>
+            <div class = 'col mt-3'>
+                <div class="card text-center">
+                    <div class="card-header">
+                            {{object.date_of_entry}}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{object.title}}</h5>
+                        <p class="card-text">{{object.blog_text}}</p>
+                        <a href="{% url 'all_blogs' %}" class="btn btn-primary">See all Blogs</a>
+                    </div>
+                    <div class="card-footer">
+                            Auther: {{object.user}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class = 'container'>
+        {% for post in object_list %}
+        <div class = 'row'>
+            <div class = 'col my-3'>
+                <div class="card text-center">
+                    <div class="card-header">
+                            {{post.date_of_entry}}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{post.title}}</h5>
+                        <p class="card-text">{{post.blog_text}}</p>
+                        <a href="{% url 'post' post.id %}" class="btn btn-primary">See Blog</a>
+                    </div>
+                    <div class="card-footer">
+                            Auther: {{post.user}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+
+        
+        
+        
+    
+
+{% endblock %}

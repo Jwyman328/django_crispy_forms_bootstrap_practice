@@ -1,0 +1,26 @@
+h2 {
+    color:green 
+}
+
+.card {
+    box-shadow: 4px 4px 4px grey; background-color: lightseagreen
+}
+
+.card-header{
+    background-color: ivory
+}
+
+.card-footer {
+    background-color:ivory
+}
+
+body {
+    background-color: lightgrey
+}
+
+.bor {
+    
+    border-style: groove; 
+    border-color: black; 
+    border-width: 4px
+}
