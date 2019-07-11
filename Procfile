@@ -1,0 +1,1 @@
+web: gunicorn practice_full_boot_crisp.wsgi --log-file -
